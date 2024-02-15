@@ -8,6 +8,7 @@ from datetime import datetime, timedelta
 import re
 
 
+
 class ohlcStream:
     def __init__(self, interval, stock_code = None, indexCode = None):
         self.stock_code = stock_code
@@ -134,3 +135,5 @@ class ohlcStream:
             close.value = self.getCurrentPrice()
         self.nextOpen = self.getCurrentPrice()
            
+
+    
